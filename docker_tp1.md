@@ -37,6 +37,9 @@ ensuite je build mon image
 ### b. Exécuter cette nouvelle image de manière à servir la page html (commande docker run) :
 ![docker run mon_image]( /capture_docker_tp1/6.3.PNG )
 
+### c. Quelles différences observez-vous entre les procédures 5. et 6. ? Avantages et inconvénients de l’une et de l’autre méthode ? :
+Les modifications de mon fichier html, par exemple, ne sont pas prises en compte lorsque j'actualise mon navigateur
+
 
 
 
