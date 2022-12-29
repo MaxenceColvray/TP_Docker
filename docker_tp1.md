@@ -28,6 +28,16 @@ hare/nginx/html/index.html```
 j'observe ensuite que j'ai toujours le meme résultat depuis mon navigateur
 
 ## 6. Builder une image
+#### a. A l’aide d’un Dockerfile, créer une image (commande docker build) :
+premièrement je crée le Dockerfile  
+![dockerfile]( /capture_docker_tp1/6.1.PNG )   
+ensuite je build mon image  
+![docker build]( /capture_docker_tp1/6.2.PNG ) 
+
+### b. Exécuter cette nouvelle image de manière à servir la page html (commande docker run) :
+![docker run mon_image]( /capture_docker_tp1/6.3.PNG )
+
+
 
 
 
