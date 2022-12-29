@@ -1,0 +1,3 @@
+FROM nginx
+
+COPY Booki /usr/share/nginx/html
