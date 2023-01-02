@@ -43,15 +43,17 @@ Les modifications de mon fichier html, par exemple, ne sont pas prises en compte
 ## 7. Utiliser une base de données dans un conteneur docker
 #### a. Récupérer les images mysql et phpmyadmin/phpmyadmin depuis le Docker Hub, b. Exécuter deux conteneurs à partir des images et ajouter une table ainsi que quelques enregistrements dans la base de données à l’aide de phpmyadmin :
 Premièrement je télécharge l'image officiel de mysql
-![image mysql]( /capture_docker_tp1/7.1.PNG )  
-Ensuite je run le conteneur en renseignant le mdp du l'utilisateur root
-![run mysql]( /capture_docker_tp1/7.2.PNG )
-et je vérfie que tout ce passe bien en rentrant dans mon conteneur pour accéder à mysql
-![exec mysql]( /capture_docker_tp1/7.3.PNG )
-Puis je fait la même chose avec l'image phpmyadmin
-![run mysql]( /capture_docker_tp1/7.4.PNG )
-Ensuite je peux créer mes bdd et mes tables 
-![run mysql]( /capture_docker_tp1/7.5.PNG )
+![image mysql]( /capture_docker_tp1/7.1.PNG )    
+Ensuite je run le conteneur en renseignant le mdp du l'utilisateur root  
+![run mysql]( /capture_docker_tp1/7.2.PNG )  
+et je vérfie que tout ce passe bien en rentrant dans mon conteneur pour accéder à mysql  
+![exec mysql]( /capture_docker_tp1/7.3.PNG )  
+Puis je fait la même chose avec l'image phpmyadmin en attribuant notamment --link avec mon conteneur mysql créer précédemment  
+![run mysql]( /capture_docker_tp1/7.4.PNG )  
+Ensuite je peux créer mes bdd et mes tables  
+![run mysql]( /capture_docker_tp1/7.5.PNG )  
+Pour finir je vérifie une nouvelle fois, en rentrant dans mon conteneur, que ma nouvelle bdd est bien présente.   
+![run mysql]( /capture_docker_tp1/7.6.PNG ) 
 
 
 
