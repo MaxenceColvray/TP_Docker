@@ -55,6 +55,18 @@ Ensuite je peux créer mes bdd et mes tables
 Pour finir je vérifie une nouvelle fois, en rentrant dans mon conteneur, que ma nouvelle bdd est bien présente.   
 ![run mysql]( /capture_docker_tp1/7.6.PNG ) 
 
+## 8. Faire la même chose que précédemment en utilisant un fichier docker-compose.yml
+
+![docker-compose.yml]( /capture_docker_tp1/8.1.PNG )
+![docker-compose up]( /capture_docker_tp1/8.2.PNG )
+
+### a. Qu’apporte le fichier docker-compose par rapport aux commandes docker run ? Pourquoi est-il intéressant ?
+L'avantage du fichier docker-compose permet de gérer plus facilement un projet contenant plusieurs applications/conteneurs. Il permet notamment de lancer plusieurs applications en une seul commande et de faciliter la gestion du mapping.
+### b. Quel moyen permet de configurer (premier utilisateur, première base de données, mot de passe root, …) facilement le conteneur mysql au lancement ?
+Pour définir c'est variables au lancement on peut utiliser les variables environment dans les fichier docker-compose.yml
+
+
+
 
 
 
