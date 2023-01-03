@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  mysql:
+    image: mysql
+    container_name: bdd
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      # MYSQL_DATABASE: test
+    ports: 
+      - 3006:3006
+    restart: always
+
+  node:
+    image: mon-image_node
+    container_name: node_server
+    depends_on:
+      - mysql
+    restart: unless-stopped
+
+volumes: 
+  mysql:
