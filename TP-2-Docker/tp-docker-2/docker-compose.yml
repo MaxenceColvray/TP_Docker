@@ -5,14 +5,22 @@ services:
     container_name: bdd
     environment:
       MYSQL_ROOT_PASSWORD: password
-      # MYSQL_DATABASE: test
+      MYSQL_DATABASE: test
+      MYSQL_USER: root
     ports: 
-      - 3006:3006
+      - "3006:3006"
     restart: always
 
   node:
     image: mon-image_node
     container_name: node_server
+    environment:
+      DATABASE_HOST: mysql
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: password
+      DATABASE_NAME: test
+    ports: 
+      - "3000:3000"
     depends_on:
       - mysql
     restart: unless-stopped
